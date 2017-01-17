@@ -1,0 +1,3 @@
+-- begin SAMPLE_CUSTOMER
+alter table SAMPLE_CUSTOMER add constraint FK_SAMPLE_CUSTOMER_DETAILS foreign key (DETAILS_ID) references SAMPLE_DETAILS(ID)^
+-- end SAMPLE_CUSTOMER
