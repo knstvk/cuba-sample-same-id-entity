@@ -9,7 +9,9 @@ import java.util.UUID;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s|name")
 @Table(name = "SAMPLE_CUSTOMER")
 @Entity(name = "sample$Customer")
 public class Customer extends BaseLongIdEntity implements HasUuid {
